@@ -24,7 +24,7 @@ class App extends Component {
   }
 
   _renderMovies = () => {
-    const movies = this.state.movies.map((movie, index) =>{
+    const movies = this.state.movies.map((movie) =>{
         console.log(movie)
         return <Movie 
           title={movie.title} 
@@ -45,17 +45,16 @@ class App extends Component {
   }
 
   _callApi = () => {
-    return fetch('https://yts.am/api/v2/list_movies.json?sort_by=rating')
-    .then(potato => potato.json())
-    .then(json => json.data.movies)
-    .catch(err => console.log(err))
+    return fetch('http://yts.lt/api/v2/list_movies.json?sort_by=rating')
+      .then(potato => potato.json())
+      .then(json => json.data.movies)
+      .catch(err => console.log(err))
   }
 
   render() {
-    const {movies} = this.state;
     return (
-      <div className={this.state.movies ? "App" : "App--loading"}>
-          {movies ? this._renderMovies() : 'Loading'}
+      <div className="App">
+          {this.state.movies ? this._renderMovies() : 'Loading'}
       </div>
     );
   }

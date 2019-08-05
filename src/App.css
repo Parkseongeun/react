@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  text-align: left;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -30,3 +31,8 @@
     transform: rotate(360deg);
   }
 }
+
+.Movie{float:left;width:25%;padding:0 2%;border:1px solid #ddd;box-sizing:border-box;padding:10px}
+.Movie__Columns h1{white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.Movie__Synopsis{height:210px;overflow-y:auto}
+.Movie img{height:200px}
