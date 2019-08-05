@@ -1,5 +1,5 @@
 {
-  "name": "hello-react",
+  "name": "react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,7 +24,7 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "homepage": "http://parkseongeun.github.io/hello-react",
+  "homepage": "http://parkseongeun.github.io/react",
   "devDependencies": {
     "gh-pages": "^2.1.0"
   }
