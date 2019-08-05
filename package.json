@@ -26,6 +26,6 @@
   ],
   "homepage": "http://parkseongeun.github.io/hello-react",
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.1.0"
   }
 }
