@@ -1,4 +1,4 @@
-import React, {} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import './Movie.css';
 
@@ -40,6 +40,9 @@ Movie.propTypes = {
 
 MoviePoster.propTypes = {
   poster: PropTypes.string.isRequired
+}
+MovieGenre.propTypes = {
+  genre: PropTypes.string.isRequired
 }
   
   
